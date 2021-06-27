@@ -4,21 +4,21 @@
 <div class="form-container">
   <div class="invalid-text" *ngIf="axInput.invalid && (axInput.dirty || axInput.touched)"> Tylko format HEX</div>
   <label for="ax">AX: </label>
-  <input [pattern]="hexPattern" type="text" name="ax" [(ngModel)]="myData.ax" #axInput="ngModel">
+  <input placeholder="Type your HEX" [pattern]="hexPattern" type="text" name="ax" [(ngModel)]="myData.ax" #axInput="ngModel">
 
   <label for="bx">BX: </label>
-  <input type="text" name="bx" [(ngModel)]="myData.bx">
+  <input placeholder="Type your HEX" type="text" name="bx" [(ngModel)]="myData.bx">
 
   <label for="cx">CX: </label>
-  <input type="text" name="cx" [(ngModel)]="myData.cx">
+  <input placeholder="Type your HEX" type="text" name="cx" [(ngModel)]="myData.cx">
 
   <label for="dx">DX: </label>
-  <input type="text" name="dx" [(ngModel)]="myData.dx">
+  <input placeholder="Type your HEX" type="text" name="dx" [(ngModel)]="myData.dx">
 
   <button (click)="onClear()">CLEAR</button>
 
   <div>
-    <p>Comends: </p>
+    <p>Comends: </p>git add .
     <!-- move -->
     <div class="command-container">
       <label for="moveFrom">MOVE FROM: </label>

@@ -9,10 +9,10 @@ import {NG_VALIDATORS} from "@angular/forms";
 export class AppComponent {
 
   myData: any = {
-    ax: 'Type your hex',
-    bx: 'Type your hex',
-    cx: 'Type your hex',
-    dx: 'Type your hex',
+    ax: '',
+    bx: '',
+    cx: '',
+    dx: '',
   }
 
   hexPattern = new RegExp(/[abc] +/g);
